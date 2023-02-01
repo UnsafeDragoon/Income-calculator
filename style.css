@@ -5,6 +5,9 @@ body{
     background-color: #001407;
     background-image: url(images/gplay.png);
 }
+html{
+    scroll-behavior: smooth ;
+}
 p,
 h1,
 h2,
@@ -15,9 +18,12 @@ h3{
 }
 h1{
     font-size: 5.33em;
+    margin-top: 2em;
+    margin-bottom: 4em;
 }
 h2{
     text-align: center;
+    font-size: 2.665em;
 }
 h4{
     color: lime;
@@ -26,12 +32,17 @@ h4{
 header{
 
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url(images/image-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: 3em 3em 500px white ;
 
+}
+
+header>div img{
+    width: 6em;
 }
 header div{
     display: flex;
@@ -42,11 +53,23 @@ header div{
     margin-right: auto;
     height: 100%;   
 }
+.logo{
+    width: 18em;
+}
 header>div a{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    /* position: relative;
+    animation-name: scroll-down;
+    animation-duration: 4s; */
 }
+/* @keyframes scroll-down{                                          To animate the hero pointer up and down
+    0% {up: 0; down: 0;}
+    33% {up:20px; down: 0;}
+    66%{up:0; down: 20px;}
+    100%{up: 20px;down:0}
+} */
 
 .job-list{
     display: flex;
