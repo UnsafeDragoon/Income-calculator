@@ -12,105 +12,110 @@
 </head>
 <body>
     <header>
-        <a><img class='logo' src="images/income-calculator-logo.png"></a>
+        <a href=""><img class='logo' src="images/income-calculator-logo.png"></a>
         <div>
             <h1>Career Searching</h1>
             <a href="index.html#job-list"><img src="images/Arrow-1.png"></a>
         </div>
     </header>
-    <h2>Find The Right Career</h2>
-    <section id='job-list' class="job-list">
+    <div id="job-list"></div>
+    <h2 >Find The Right Career</h2>
+    <section class="job-list">
         <div>
             <ul>
-                <li><a title="$55,650.00" href="#">Accountant</a></li>
-                <li><a title="$53,550.00" href="#">Advance Tractor/Trailer Driver</a></li>
-                <li><a title="$56,700.00" href="#">Agricultural Engineer </a></li>
-                <li><a title="$53,550.00" href="#">Architect</a></li>
-                <li><a title="$49,350.00" href="#">Auto Tech/Mechanic </a></li>
-                <li><a title="$50,400.00" href="#">Aviation Tech. Mechanic  </a></li>
-                <li><a title="$54,600.00" href="#">Biologist</a></li>
-                <li><a title="$37,800.00" href="#">Bus Driver </a></li>
-                <li><a title="$54,600.00" href="#">Business Development Officer</a></li>
-                <li><a title="$61,950.00" href="#">Business Manager (Hotel, etc.) </a></li>
-                <li><a title="$80,850.00" href="#">CNC Manufacturing </a></li>
-                <li><a title="$47,250.00" href="#">Carpenter </a></li>
-                <li><a title="$.00" href="#">Chef </a></li>
-                <li><a title="$.00" href="#">Chemist</a></li>
-                <li><a title="$.00" href="#">Civil Engineering Technician</a></li>
-                <li><a title="$.00" href="#">Commercial Driver </a></li>
-                <li><a title="$.00" href="#">Computer Technician</a></li>
-                <li><a title="$.00" href="#">Conserv./Environ. Science</a></li>
-                <li><a title="$.00" href="#">Corectional Officer</a></li>
-                <li><a title="$.00" href="#">Cosmetologist</a></li>
-                <li><a title="$.00" href="#">Credit Union/Bank Manager</a></li>
-                <li><a title="$.00" href="#">Daycare Director</a></li>
-                <li><a title="$.00" href="#">Dentist</a></li>
-                <li><a title="$.00" href="#">Detective</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="accountant()">Accountant</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="tractor()">Advance Tractor/Trailer Driver</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="agriEng()">Agricultural Engineer </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="arch()">Architect</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="autoTech()">Auto Tech/Mechanic </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="aviTech()">Aviation Tech. Mechanic  </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="bio()">Biologist</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="bus()">Bus Driver </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="businessDev()">Business Development Officer</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="businessMan()">Business Manager (Hotel, etc.) </a></li>
+                <li><a   href="index.html#calculate-deductions" onclick="cncManu()">CNC Manufacturing </a></li>
+                <li><a   href="index.html#calculate-deductions" onclick="carpen()">Carpenter </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="chef()">Chef </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="chem()">Chemist</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="civEng()">Civil Engineering Technician</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="comDriver()">Commercial Driver </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="comTech()">Computer Technician</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="envSci()">Conserv./Environ. Science</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="corOff()">Corectional Officer</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="cos()">Cosmetologist</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="bankMan()">Credit Union/Bank Manager</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="daycare()">Daycare Director</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="dentist()">Dentist</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="detective()">Detective</a></li>
             </ul>
         </div>
         <div>
             <ul>
-                <li><a title="$.00" href="#">Diesel Tech/Mechanic</a></li>
-                <li><a title="$.00" href="#">Doctor/Physician</a></li>
-                <li><a title="$.00" href="#">Electrician </a></li>
-                <li><a title="$.00" href="#">Electronic Engineer</a></li>
-                <li><a title="$.00" href="#">EMT </a></li>
-                <li><a title="$.00" href="#">Energy Management PG&E </a></li>
-                <li><a title="$.00" href="#">Engineer</a></li>
-                <li><a title="$.00" href="#">Fashion Designer  </a></li>
-                <li><a title="$.00" href="#">Fire Fighter</a></li>
-                <li><a title="$.00" href="#">Forest Ranger</a></li>
-                <li><a title="$.00" href="#">Graphic/Media Designer </a></li>
-                <li><a title="$.00" href="#">H/C HVAC </a></li>
-                <li><a title="$.00" href="#">Highway Patrol </a></li>
-                <li><a title="$.00" href="#">Home Inspector</a></li>
-                <li><a title="$.00" href="#">Industrial Mechanic</a></li>
-                <li><a title="$.00" href="#">Interior Designer</a></li>
-                <li><a title="$.00" href="#">Investment Analyst</a></li>
-                <li><a title="$.00" href="#">Lab Technician</a></li>
-                <li><a title="$.00" href="#">Landscaper Horticulture</a></li>
-                <li><a title="$.00" href="#">Lawyer</a></li>
-                <li><a title="$.00" href="#">Marketing/Sales Manager  </a></li>
-                <li><a title="$.00" href="#">Media/Communications</a></li>
-                <li><a title="$.00" href="#">Medical Repair Tech</a></li>
-                <li><a title="$.00" href="#">Military</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="dieselTech()">Diesel Tech/Mechanic</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="doc()">Doctor/Physician</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="elct()">Electrician </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="elctEng()">Electronic Engineer</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="emt()">EMT </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="pgeMan()">Energy Management PG&E </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="eng()">Engineer</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="fashDes()">Fashion Designer  </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="fireFight()">Fire Fighter</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="forestRan()">Forest Ranger</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="mediaDes()">Graphic/Media Designer </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="hVac()">H/C HVAC </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="highway()">Highway Patrol </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="homeInspect()">Home Inspector</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="indMech()">Industrial Mechanic</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="intDes()">Interior Designer</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="invAna()">Investment Analyst</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="labTech()">Lab Technician</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="landScape()">Landscaper Horticulture</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="law()">Lawyer</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="marketing()">Marketing/Sales Manager  </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="communication()">Media/Communications</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="medRepTech()">Medical Repair Tech</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="milit()">Military</a></li>
             </ul>
         </div>
         <div>
             <ul>
-                <li><a title="$.00" href="#">Nurse</a></li>
-                <li><a title="$.00" href="#">Nutritionist</a></li>
-                <li><a title="$.00" href="#"> Oceanographer</a></li>
-                <li><a title="$.00" href="#">Pastor</a></li>
-                <li><a title="$.00" href="#">PG&E/AT&T Technician </a></li>
-                <li><a title="$.00" href="#">Pharmacist </a></li>
-                <li><a title="$.00" href="#">Photographer</a></li>
-                <li><a title="$.00" href="#">Physical  Therapist</a></li>
-                <li><a title="$.00" href="#">Pilot (Commercial)</a></li>
-                <li><a title="$.00" href="#">Plumber</a></li>
-                <li><a title="$.00" href="#">Police Officer </a></li>
-                <li><a title="$.00" href="#">Principal </a></li>
-                <li><a title="$.00" href="#">Probation Officer </a></li>
-                <li><a title="$.00" href="#">Psychologist</a></li>
-                <li><a title="$.00" href="#">Retail Sales Associate</a></li>
-                <li><a title="$.00" href="#">Social Worker</a></li>
-                <li><a title="$.00" href="#">Solar Energy Tech</a></li>
-                <li><a title="$.00" href="#">Solar Energy Tech</a></li>
-                <li><a title="$.00" href="#">UPS/Fed Ex Driver</a></li>
-                <li><a title="$.00" href="#">Veterinarian</a></li>
-                <li><a title="$.00" href="#">Welder/ Metal specialist </a></li>
-                <li><a title="$.00" href="#">Wind Energy Technician</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="nurse()">Nurse</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="nutr()">Nutritionist</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="ocean()"> Oceanographer</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="pastor()">Pastor</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="pgeTech()">PG&E/AT&T Technician </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="pharm()">Pharmacist </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="photo()">Photographer</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="physTher()">Physical  Therapist</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="pilot()">Pilot (Commercial)</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="plumb()">Plumber</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="police()">Police Officer </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="principal()">Principal </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="probOff()">Probation Officer </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="psyc()">Psychologist</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="retail()">Retail Sales Associate</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="socialWork()">Social Worker</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="solarTech()">Solar Energy Tech</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="teach()">Teacher</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="ups()">UPS/Fed Ex Driver</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="vet()">Veterinarian</a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="weld()">Welder/ Metal specialist </a></li>
+                <li><a  href="index.html#calculate-deductions" onclick="windTech()">Wind Energy Technician</a></li>
             </ul>
         </div>
     </section>
-    <h2>Calculate Your Income!</h2>
+    
+    <h2 id='calculate-deductions'>Calculate Your Income!</h2>
     <section>
-        <div class="section-main-div">
+        <div class="section-main-div calculate-intro">
             <h3>Select A Career Above</h3>
-            <div></div>
-            <p>You Chose:</p><p id="job"></p>
+            <div class="vertical-line"></div>
+            <div class="your-choice">
+                <p>You Chose:</p>
+                <p id="job"></p>
+            </div>
         </div>
-        <div class="pay-period">
+        <div class="pay-period section-main-div">
             <h3>Pay Period Deductions</h3>
             <div class="tax-name">
                 <p>Federal Taxes</p>
@@ -140,16 +145,57 @@
                 <p>=</p>
             </div>
             <div class="end-deduction">
-                <p id="fedDeduction">s</p>
-                <p id="stateDeduction">s</p>
-                <p id="socialDeduction">s</p>
-                <p id="medDeduction">s</p>
-                <p id="disabilityDeduction">s</p>
-                <p id="retireDeduction">s</p>
-                <p id="insuranceDeduction">s</p>
+                <p id="fedDeduction">$00</p>
+                <p id="stateDeduction">$00</p>
+                <p id="socialDeduction">$00</p>
+                <p id="medDeduction">$00</p>
+                <p id="disabilityDeduction">$00</p>
+                <p id="retireDeduction">$00</p>
+                <p id="insuranceDeduction">$180</p>
             </div>
         </div>
+        <div class="three-incomes">
+            <div class="incomes">
+                <h4>Gross Income</h4>
+                <p id="grossYear">$00</p>
+                <p>Yearly</p>
+                <div></div>
+                <p id="grossMonth">$00</p>
+                <p>Monthly</p>
+            </div>
+            <div class="incomes">
+                <h4>Deductions</h4>
+                <p id="deductYear">$00</p>
+                <p>Yearly</p>
+                <div></div>
+                <p id="deductMonth">$00</p>
+                <p>Monthly</p>
+            </div>
+            <div class="incomes">
+                <h4>Net Income</h4>
+                <p id="netYear">$00</p>
+                <p>Yearly</p>
+                <div></div>
+                <p id="netMonth">$00</p>
+                <p>Monthly</p>
+            </div>
+        </div>
+        <div class="house-calc">
+            <h3>You Can Afford a House Payment Of: </h3>
+            <h3 id="houseRange">$00</h3>
+        </div>
     </section>
+
+
+
+
+
+    <footer>
+        <div>
+            <a href=""><img src="images/income-calculator-logo.png"></a>
+            <p>ⒸShineBrightAgency</p>
+        </div>
+    </footer>
 
     <!-- <script src="EECU-data.js"></script> -->
     <script>
@@ -159,6 +205,402 @@
         // document.getElementById("job").innerHTML = job;
         // let data = require(EECU-data.js).data;
 
+        // let x=10;
+        // x=null;
+        // function send(order){
+        //     // document.getElementById("fedDeduction").innerHTML ='ssssssssssssss'
+        //     x=parseInt(order)
+        // }
+        let jobOrder = null;
+        function accountant(){
+            jobOrder = 0
+            deductions()
+        }
+        function tractor(){
+            jobOrder = 1
+            deductions()
+        }
+        function agriEng(){
+            jobOrder = 2;
+            deductions()
+        }
+        function arch(){
+            jobOrder = 3;
+            deductions()
+        }
+        function autoTech(){
+            jobOrder = 4;
+            deductions()
+        }
+        function aviTech(){
+            jobOrder = 5;
+            deductions()
+        }
+        function bio(){
+            jobOrder = 6;
+            deductions()
+        }
+        function bus(){
+            jobOrder = 7;
+            deductions()
+        }
+        function businessDev(){
+            jobOrder = 8;
+            deductions()
+        }
+        function businessMan(){
+            jobOrder = 9;
+            deductions()
+        }
+        function cncManu(){
+            jobOrder = 10;
+            deductions()
+        }
+        function carpen(){
+            jobOrder = 11;
+            deductions()
+        }
+        function chef(){
+            jobOrder = 12;
+            deductions()
+        }
+        function chem(){
+            jobOrder = 13;
+            deductions()
+        }
+        function civEng(){
+            jobOrder = 14;
+            deductions()
+        }
+        function comDriver(){
+            jobOrder = 15;
+            deductions()
+        }
+        function comTech(){
+            jobOrder = 16;
+            deductions()
+        }
+        function envSci(){
+            jobOrder = 17;
+            deductions()
+        }
+        function corOff(){
+            jobOrder = 18;
+            deductions()
+        }
+        function cos(){
+            jobOrder = 19;
+            deductions()
+        }
+        function bankMan(){
+            jobOrder = 20;
+            deductions()
+        }
+        function daycare(){
+            jobOrder = 21;
+            deductions()
+        }
+        function dentist(){
+            jobOrder = 22;
+            deductions()
+        }
+        function detective(){
+            jobOrder = 23;
+            deductions()
+        }
+        function dieselTech(){
+            jobOrder = 24;
+            deductions()
+        }
+        function doc(){
+            jobOrder = 25;
+            deductions()
+        }
+        function elct(){
+            jobOrder = 26;
+            deductions()
+        }
+        function elctEng(){
+            jobOrder = 27;
+            deductions()
+        }
+        function emt(){
+            jobOrder = 28;
+            deductions()
+        }
+        function pgeMan(){
+            jobOrder = 29;
+            deductions()
+        }
+        function eng(){
+            jobOrder = 30;
+            deductions()
+        }
+        function fashDes(){
+            jobOrder = 31;
+            deductions()
+        }
+        function fireFight(){
+            jobOrder = 32;
+            deductions()
+        }
+        function forestRan(){
+            jobOrder = 33;
+            deductions()
+        }
+        function mediaDes(){
+            jobOrder = 34;
+            deductions()
+        }
+        function hVac(){
+            jobOrder = 35;
+            deductions()
+        }
+        function highway(){
+            jobOrder = 36;
+            deductions()
+        }
+        function homeInspect(){
+            jobOrder = 37;
+            deductions()
+        }
+        function indMech(){
+            jobOrder = 38;
+            deductions()
+        }
+        function intDes(){
+            jobOrder = 39;
+            deductions()
+        }
+        function invAna(){
+            jobOrder = 40;
+            deductions()
+        }
+        function labTech(){
+            jobOrder = 41;
+            deductions()
+        }
+        function landScape(){
+            jobOrder = 42;
+            deductions()
+        }
+        function law(){
+            jobOrder = 43;
+            deductions()
+        }
+        function marketing(){
+            jobOrder = 44;
+            deductions()
+        }
+        function communication(){
+            jobOrder = 45;
+            deductions()
+        }
+        function medRepTech(){
+            jobOrder = 46;
+            deductions()
+        }
+        function milit(){
+            jobOrder = 47;
+            deductions()
+        }
+        function nurse(){
+            jobOrder = 48;
+            deductions()
+        }
+        function nutr(){
+            jobOrder = 49;
+            deductions()
+        }
+        function ocean(){
+            jobOrder = 50;
+            deductions()
+        }
+        function pastor(){
+            jobOrder = 51;
+            deductions()
+        }
+        function pgeTech(){
+            jobOrder = 52;
+            deductions()
+        }
+        function pharm(){
+            jobOrder = 53;
+            deductions()
+        }
+        function photo(){
+            jobOrder = 54;
+            deductions()
+        }
+        function physTher(){
+            jobOrder = 55;
+            deductions()
+        }
+        function pilot(){
+            jobOrder = 56;
+            deductions()
+        }
+        function plumb(){
+            jobOrder = 57;
+            deductions()
+        }
+        function police(){
+            jobOrder = 58;
+            deductions()
+        }
+        function principal(){
+            jobOrder = 59;
+            deductions()
+        }
+        function probOff(){
+            jobOrder = 60;
+            deductions()
+        }
+        function psyc(){
+            jobOrder = 61;
+            deductions()
+        }
+        function retail(){
+            jobOrder = 62;
+            deductions()
+        }
+        function socialWork(){
+            jobOrder = 63;
+            deductions()
+        }
+        function solarTech(){
+            jobOrder = 64;
+            deductions()
+        }
+        function teach(){
+            jobOrder = 65;
+            deductions()
+        }
+        function ups(){
+            jobOrder = 66;
+            deductions()
+        }
+        function vet(){
+            jobOrder = 67;
+            deductions()
+        }
+        function weld(){
+            jobOrder = 68;
+            deductions()
+        }
+        function windTech(){
+            jobOrder = 69;
+            deductions()
+        }
+
+
+        
+
+        let data = [
+            [ 'Accountant', 55650 ],
+            [ 'Advance Tractor/Trailer Driver', 53550 ],
+            [ 'Agricultural Engineer', 56700 ],
+            [ 'Architect', 53550 ],
+            [ 'Auto Tech/Mechanic', 49350 ],
+            [ 'Aviation Tech. Mechanic', 50400 ],
+            [ 'Biologist', 54600 ],
+            [ 'Bus Driver', 37800 ],
+            [ 'Business Development Officer', 54600 ],
+            [ 'Business Manager Hotel etc.', 61950 ],
+            [ 'CNC Manufacturing', 80850 ],
+            [ 'Carpenter', 47250 ],
+            [ 'Chef', 52500 ],
+            [ 'Chemist', 56700 ],
+            [ 'Civil Engineering Technician', 68250 ],
+            [ 'Commercial Driver', 51450 ],
+            [ 'ComputerTechnician', 46200 ],
+            [ 'Conserv./Environ. Science', 72450 ],
+            [ 'Correctional Officer', 48300 ],
+            [ 'Cosmetologist', 36750 ],
+            [ 'Credit Union/Bank Manager', 61950 ],
+            [ 'Daycare Director', 37800 ],
+            [ 'Dentist', 115500 ],
+            [ 'Detective', 60900 ],
+            [ 'Diesel Tech/Mechanic', 55650 ],
+            [ 'Doctor/Physician', 147000 ],
+            [ 'Electrician', 54600 ],
+            [ 'Electronic Engineer', 75600 ],
+            [ 'EMT', 34650 ],
+            [ 'Energy Management PG&E', 106050 ],
+            [ 'Engineer', 72450 ],
+            [ 'Fashion Designer', 63000 ],
+            [ 'Fire Fighter', 49350 ],
+            [ 'Forest Ranger', 52500 ],
+            [ 'Graphic/Media Designer', 58800 ],
+            [ 'H/C HVAC', 63000 ],
+            [ 'Highway Patrol', 84000 ],
+            [ 'Home Inspector', 56700 ],
+            [ 'Industrial Mechanic', 46200 ],
+            [ 'Interior Designer', 49350 ],
+            [ 'Investment Analyst', 66150 ],
+            [ 'Lab Technician', 42000 ],
+            [ 'Landscaper Horticulture', 48300 ],
+            [ 'lawyer', 86100 ],
+            [ 'Marketing/Sales Manager', 58800 ],
+            [ 'Media/Communications', 45150 ],
+            [ 'Medical RepairTech.', 52500 ],
+            [ 'Military', 55650 ],
+            [ 'Nuse', 66150 ],
+            [ 'Nutitionist', 45150 ],
+            [ 'Oceanographer', 69300 ],
+            [ 'Pastor', 50400 ],
+            [ 'PGBEATT Technician', 78750 ],
+            [ 'Pharmacist', 105000 ],
+            [ 'Photographer', 45150 ],
+            [ 'Physical Therapist', 72450 ],
+            [ 'Pilot Commercial', 78750 ],
+            [ 'Plumber', 52500 ],
+            [ 'Police Officer', 53550 ],
+            [ 'Principal', 93450 ],
+            [ 'Probation Officer', 44100 ],
+            [ 'Psychologist', 77700 ],
+            [ 'Retail Sales Associate', 34650 ],
+            [ 'Social Worker', 50400 ],
+            [ 'Solar Energy Tech.', 53550 ],
+            [ 'Teacher', 52500 ],
+            [ 'UPS/Fed Ex Driver', 68250 ],
+            [ 'Veterinarian', 82950 ],
+            [ 'Welder/Metal Specialist', 47250 ],
+            [ 'Wind EnergyTechnician', 56700 ]
+        ]
+
+        // x=data[10];
+        // let accountant= document.getElementById('accountant');
+        // document.getElementById("fedDeduction").innerHTML ='$'+data[x][1]*.12;
+        function deductions(){
+            document.getElementById("job").innerHTML =data[jobOrder][0];
+            document.getElementById("fedDeduction").innerHTML ='$'+Math.round(data[jobOrder][1]*.12/12);
+            document.getElementById("stateDeduction").innerHTML ='$'+Math.round(data[jobOrder][1]*.072/12);
+            document.getElementById("socialDeduction").innerHTML ='$'+Math.round(data[jobOrder][1]*.062/12);
+            document.getElementById("medDeduction").innerHTML ='$'+Math.round(data[jobOrder][1]*.0145/12);
+            document.getElementById("disabilityDeduction").innerHTML ='$'+Math.round(data[jobOrder][1]*.01/12);
+            document.getElementById("retireDeduction").innerHTML ='$'+Math.round(data[jobOrder][1]*.05/12);
+            
+            let GA = data[jobOrder][1];
+            let GM = GA/12;
+            let YD = Math.round(data[jobOrder][1]*.3625 + 2160);
+            let MD = Math.round(data[jobOrder][1]*.3625/12 + 180);
+            let NY = GA-YD;
+            let NM = GM-MD;
+            let HP = Math.round(GM*.33)
+            document.getElementById("grossYear").innerHTML = '$'+ GA;
+            document.getElementById("grossMonth").innerHTML = '$'+ GM;
+            document.getElementById("deductYear").innerHTML = '$'+ YD;
+            document.getElementById("deductMonth").innerHTML = '$'+ MD;
+            document.getElementById("netYear").innerHTML = '$'+ NY;
+            document.getElementById("netMonth").innerHTML = '$'+ NM;
+            document.getElementById("houseRange").innerHTML = '$'+ HP;
+            
+            
+          
+            
+        }
+   
     </script>
 </body>
 </html>
