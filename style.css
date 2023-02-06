@@ -306,23 +306,44 @@ option{
     width: 10%;
     border-right: white solid .1em;
 }
-#transactionDetails{
+.transactionDetails{
     width: 60%;
     border-right: white solid .1em;
 }
-#amountExchanged{
+.amountExchanged{
     width: 25%;
     border-right: white solid .1em;
 }
 .checkbook select{
     width:10%;
     font-size: 1em;
-    background-color: #667265;
+    background-color: #98C694;
+    border: 0;
     border-right: white solid .1em;
 }
-#balance{
+.balance{
     width: 20%;
     background-color: #667265;
     text-align: center;
     
+}
+.checkbook-labels{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cb-lbl-date{
+    width: calc(72.11%/950.33*100);
+}
+.cb-lbl-details{
+    width: calc(429.5%/1009.29*100);
+}
+.cb-lbl-w-d{
+    width: calc(182.23%/1009.29*100);
+}
+.cb-lbl-emptyspace{
+    width: 11.8%;
+}
+.cb-lbl-balance{
+    border-left: solid white .1em;
 }
