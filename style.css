@@ -332,6 +332,7 @@ option{
     flex-wrap: wrap;
     width: 100%;
 }
+
 .cb-lbl-date{
     width: calc(72.11%/950.33*100);
 }
@@ -346,4 +347,7 @@ option{
 }
 .cb-lbl-balance{
     border-left: solid white .1em;
+}
+input{
+    color: white;
 }
