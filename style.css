@@ -335,19 +335,26 @@ option{
 
 .cb-lbl-date{
     width: calc(72.11%/950.33*100);
+    text-align: center;
 }
 .cb-lbl-details{
     width: calc(429.5%/1009.29*100);
+    text-align: center;
 }
 .cb-lbl-w-d{
     width: calc(182.23%/1009.29*100);
+    text-align: center;
+    
 }
 .cb-lbl-emptyspace{
     width: 11.8%;
+
 }
-.cb-lbl-balance{
-    border-left: solid white .1em;
-}
+
 input{
     color: white;
+}
+.cb-lbl-balance{
+    text-align: center;
+    
 }

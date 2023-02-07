@@ -198,7 +198,10 @@
         <div class="transaction">
             <form>
                 <input class="date" type="text">
-                <input class="transactionDetails" id='transactionDetailsOne' type="text">
+                <input class="transactionDetails" onclick="test()"  id='transactionDetailsOne' type="text">                                                                                      
+                
+                <!--function to test correct values being sent to javascript-->
+
                 <input class='amountExchanged' id='amountExchangedOne' type="text">
             </form>
             <select name="transactionTypeOne" id="typeOne">
@@ -737,11 +740,19 @@
             document.getElementById("netYear").innerHTML = '$'+ NY;
             document.getElementById("netMonth").innerHTML = '$'+ NM;
             document.getElementById("houseRange").innerHTML = '$'+ HP;
-            
-            
-          
-            
+            let CB=NM;            
         }
+        // let transactionDetail
+        // let transactionNum
+        // let transactions=[];
+
+        // let transactionDetail = document.getElementById('transactionDetailsOne').value;
+        
+        // function test(){
+        //     console.log(transactionDetail)
+        // }
+
+        // document.getElementById('').addEventListener(change)
    
     </script>
 </body>
