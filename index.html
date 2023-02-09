@@ -196,13 +196,13 @@
 
         </div>
         <div class="transaction">
-            <form>
+            <form id="transactionOne">
                 <input class="date" type="text">
-                <input class="transactionDetails" onclick="test()"  id='transactionDetailsOne' type="text">                                                                                      
+                <input class="transactionDetails" id='transactionDetailsOne' type="text">                                                                                      
                 
                 <!--function to test correct values being sent to javascript-->
 
-                <input class='amountExchanged' id='amountExchangedOne' type="text">
+                <input class='amountExchanged' id='amountExchangedOne' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeOne" id="typeOne">
                 <option value="" disabled selected hidden>Select</option>
@@ -212,10 +212,10 @@
             <p id="balanceOne"></p>
         </div>
         <div class="transaction">
-            <form>
+            <form id="transactionTwo">
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsTwo' type="text">
-                <input class='amountExchanged' id='amountExchangedTwo' type="text">
+                <input class='amountExchanged' id='amountExchangedTwo' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeTwo" id="typeTwo">
                 <option value="" disabled selected hidden>Select</option>
@@ -228,7 +228,7 @@
             <form>
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsThree' type="text">
-                <input class='amountExchanged' id='amountExchangedThree' type="text">
+                <input class='amountExchanged' id='amountExchangedThree' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeThree" id="typeThree">
                 <option value="" disabled selected hidden>Select</option>
@@ -241,7 +241,7 @@
             <form>
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsFour' type="text">
-                <input class='amountExchanged' id='amountExchangedFour' type="text">
+                <input class='amountExchanged' id='amountExchangedFour' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeFour" id="typeFour">
                 <option value="" disabled selected hidden>Select</option>
@@ -254,7 +254,7 @@
             <form>
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsFive' type="text">
-                <input class='amountExchanged' id='amountExchangedFive' type="text">
+                <input class='amountExchanged' id='amountExchangedFive' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeFive" id="typeFive">
                 <option value="" disabled selected hidden>Select</option>
@@ -267,7 +267,7 @@
             <form>
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsSix' type="text">
-                <input class='amountExchanged' id='amountExchangedSix' type="text">
+                <input class='amountExchanged' id='amountExchangedSix' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeSix" id="typeSix">
                 <option value="" disabled selected hidden>Select</option>
@@ -280,7 +280,7 @@
             <form>
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsSeven' type="text">
-                <input class='amountExchanged' id='amountExchangedSeven' type="text">
+                <input class='amountExchanged' id='amountExchangedSeven' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeSeven" id="typeSeven">
                 <option value="" disabled selected hidden>Select</option>
@@ -293,7 +293,7 @@
             <form>
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsEight' type="text">
-                <input class='amountExchanged' id='amountExchangedEight' type="text">
+                <input class='amountExchanged' id='amountExchangedEight' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeEight" id="typeEight">
                 <option value="" disabled selected hidden>Select</option>
@@ -306,7 +306,7 @@
             <form>
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsNine' type="text">
-                <input class='amountExchanged' id='amountExchangedNine' type="text">
+                <input class='amountExchanged' id='amountExchangedNine' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeNine" id="typeNine">
                 <option value="" disabled selected hidden>Select</option>
@@ -319,7 +319,7 @@
             <form>
                 <input class="date" type="text">
                 <input class="transactionDetails" id='transactionDetailsTen' type="text">
-                <input class='amountExchanged' id='amountExchangedTen' type="text">
+                <input class='amountExchanged' id='amountExchangedTen' type="number" min="0" disabled>
             </form>
             <select name="transactionTypeTen" id="typeTen">
                 <option value="" disabled selected hidden>Select</option>
@@ -743,7 +743,98 @@
             let CB=NM;            
         }
         
-        let transactions=[];
+        // let transactions=[];
+
+
+        const formOne = document.querySelector('#transactionOne');
+
+        const formTwo = document.querySelector('#transactionTwo');
+
+        const formThree = document.querySelector('#transactionThree');
+
+        const formFour = document.querySelector('#transactionFour');
+
+        const formFive = document.querySelector('#transactionFive');
+
+        const formSix = document.querySelector('#transactionSix');
+
+        const formSeven = document.querySelector('#transactionSeven');
+
+        const formEight = document.querySelector('#transactionEight');
+
+        const formNine = document.querySelector('#transactionNine');
+
+        const formTen = document.querySelector('#transactionTen');
+
+
+
+
+        const inputDetailsOne = document.querySelector('#transactionDetailsOne');
+        const inputAmountOne = document.querySelector('#amountExchangedOne');
+
+
+        const inputDetailsTwo = document.querySelector('#transactionDetailsTwo');
+
+        const inputDetailsThree = document.querySelector('#transactionDetailsThree');
+
+        const inputDetailsFour = document.querySelector('#transactionDetailsFour');
+
+        const inputDetailsFive = document.querySelector('#transactionDetailsFive');
+
+        const inputDetailsSix = document.querySelector('#transactionDetailsSix');
+
+        const inputDetailsSeven = document.querySelector('#transactionDetailsSeven');
+
+        const inputDetailsEight = document.querySelector('#transactionDetailsEight');
+
+        const inputDetailsNine = document.querySelector('#transactionDetailsNine');
+
+        const inputDetailsTen = document.querySelector('#transactionDetailsTen');
+
+        let balance;
+        
+        let transactionOne=[];
+        
+
+
+
+
+        inputDetailsOne.addEventListener('blur', (event) => {
+            const DetailsOne = inputDetailsOne.value;
+            console.log(DetailsOne);
+            if (isNaN(DetailsOne)){
+                document.getElementById('amountExchangedOne').disabled = false;
+                transactionOne.pop()
+                transactionOne.push(DetailsOne)
+                console.log(transactionOne)
+
+            } else{
+                document.getElementById('amountExchangedOne').disabled = true;
+        }
+         });
+         inputAmountOne.addEventListener('blur', (event) => {
+            const amountOne = inputAmountOne.value;
+            transactionOne.push(amountOne)
+            console.log(amountOne);
+        });
+
+        inputDetailsTwo.addEventListener('blur', (event) => {const DetailsTwo = inputDetailsTwo.value; console.log(DetailsTwo)});
+
+        inputDetailsThree.addEventListener('blur', (event) => {const DetailsThree = inputDetailsThree.value;console.log(DetailsThree)});
+        
+        inputDetailsFour.addEventListener('blur', (event) => {const DetailsFour = inputDetailsFour.value;console.log(DetailsFour)});
+
+        inputDetailsFive.addEventListener('blur', (event) => {const DetailsFive = inputDetailsFive.value;console.log(DetailsFive)});
+
+        inputDetailsSix.addEventListener('blur', (event) => {const DetailsSix = inputDetailsSix.value;console.log(DetailsSix)});
+
+        inputDetailsSeven.addEventListener('blur', (event) => {const DetailsSeven = inputDetailsSeven.value;console.log(DetailsSeven)});
+
+        inputDetailsEight.addEventListener('blur', (event) => {const DetailsEight = inputDetailsEight.value;console.log(DetailsEight)});
+
+        inputDetailsNine.addEventListener('blur', (event) => {const DetailsNine = inputDetailsNine.value;console.log(DetailsNine)});
+
+        inputDetailsTen.addEventListener('blur', (event) => {const DetailsTen = inputDetailsTen.value;console.log(DetailsTen)});
         
         
 
