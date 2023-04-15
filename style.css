@@ -18,8 +18,8 @@ h4{
 }
 h1{
     font-size: 7em;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
     text-shadow: black .05em .05em;
 }
 h2{
@@ -32,7 +32,7 @@ h2{
 header{
     width: 100%;
     height: 100vh;  
-    background-image: url(images/image-2.png);
+    background-image: url(images/image-2.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,14 +51,18 @@ header>div img{
 header div{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: -moz-fit-content;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     height: 100%;   
+    margin-bottom: auto;
+    margin-top: auto;
 }
 .logo{
     width: 18em;
+    position: absolute;
 }
 header>div a{
     width: fit-content;
@@ -357,4 +361,62 @@ input{
 .cb-lbl-balance{
     text-align: center;
     
+}
+.job-dropdown{
+    display: none;
+    border: solid 1px white;
+    border-radius: 10px;
+    height: 2em;
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    background-color:#667265;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color:white;
+    font-size: 4em;
+}
+.job-dropdown:hover{
+    background-color: #576356;
+}
+
+@media (max-width:870px){
+    header>div>a>img{
+        width: 20em;
+    }
+    header div{
+        justify-content: space-evenly;
+    }
+    h1{
+        font-size: 12em;
+    }
+    .logo{
+        width: 38em;
+    }
+    h2{
+        font-size: 7em;
+        text-decoration: underline 2px;
+        margin-bottom: 0;
+    }
+    .job-list{
+        flex-direction: column;
+    }
+    .joblist {
+        display: none;
+    }
+    .job-list li{
+        font-size: 4em;
+        width: 100%;
+        border-bottom: #001407 1px solid;
+    }
+    .job-list ul{
+        width: 100%;
+    }
+    .job-list div{
+        width: 100%;
+    }
+    .job-dropdown{
+        display: inline-block;
+    }
+
 }

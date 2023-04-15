@@ -490,5 +490,16 @@
 
         inputDetailsTen.addEventListener('blur', (event) => {const DetailsTen = inputDetailsTen.value;console.log(DetailsTen)});
         
-        
-
+        function openJobs(){
+            let x = document.querySelectorAll('.joblist')
+            let currentStyle = getComputedStyle(x[1]).display
+            if(currentStyle === 'none'){
+                for (let i = 0; i < x.length; i++) {
+                    x[i].style.display = 'block';
+                }
+            } else if(currentStyle === 'block'){
+                for (let i = 0; i < x.length; i++) {
+                    x[i].style.display = 'none';
+                }
+            }
+        }
