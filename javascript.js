@@ -496,10 +496,12 @@
             if(currentStyle === 'none'){
                 for (let i = 0; i < x.length; i++) {
                     x[i].style.display = 'block';
+                    document.querySelector('.job-dropdown').innerHTML = 'Close Job List'
                 }
             } else if(currentStyle === 'block'){
                 for (let i = 0; i < x.length; i++) {
                     x[i].style.display = 'none';
                 }
+                document.querySelector('.job-dropdown').innerHTML = 'Open Job List'
             }
         }

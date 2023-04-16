@@ -394,9 +394,9 @@ input{
         width: 38em;
     }
     h2{
-        font-size: 7em;
+        font-size: 8em;
         text-decoration: underline 2px;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
     .job-list{
         flex-direction: column;
@@ -418,5 +418,45 @@ input{
     .job-dropdown{
         display: inline-block;
     }
-
+    .calculate-intro{
+        flex-direction: column;
+    }
+    .calculate-intro h3{
+        width: 100%;
+        font-size: 5em;
+        text-align: center;
+    }
+    .vertical-line{
+        height: .2em;
+        width: 100%;
+    }
+    .your-choice{
+        width: 100%;
+        font-size: 3em;
+        text-align: center;
+    }
+    .pay-period{
+        font-size: 2em;
+    }
+    .three-incomes{
+        flex-direction: column;
+    }
+    .incomes{
+        width: 100%;
+        font-size: 2.5em;
+        margin-top: 4em;
+    }
+    .house-calc{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .checkbook{
+        font-size: 2em;
+    }
+    footer div{
+        font-size: 3.5em;
+    }
+    footer{
+        height: 50em;
+    }
 }
